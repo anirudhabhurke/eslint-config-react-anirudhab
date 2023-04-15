@@ -4,18 +4,10 @@ A versatile and extensible ESLint configuration built on top of popular librarie
 
 ## Installation
 
-Install the ESLint config and its peer dependencies:
+Install the ESLint config and its peer dependencies
 
 ```
-npm install --save-dev eslint-config-react-anirudhab
-
-```
-
-If you use yarn
-
-```
-yarn add -D eslint-config-react-anirudhab
-
+npx install-peerdeps --dev eslint-config-react-anirudhab
 ```
 
 ## Usage
@@ -28,16 +20,26 @@ module.exports = {
 };
 ```
 
-### 2. [Optional] Create or update your project's tsconfig.json file with the following settings to enable path aliases
+### 2. [Optional] Update tsconfig.json
 
 ```json
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
-  },
+  "extends": "eslint-config-react-anirudhab/tsconfig.base"
+}
+```
+
+### 3. [Optional] Update Prettier Config `.prettierrc`
+
+```json
+{
+  "semi": true,
+  "singleQuote": true,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "bracketSpacing": false,
+  "jsxBracketSameLine": true,
+  "bracketSameLine": true
 }
 ```
 
