@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-react-anirudhab",
   "version": "1.0.0",
-  "description": "My own eslint rules",
+  "description": "A versatile and extensible ESLint configuration built on top of popular libraries, with added TypeScript support and custom rules",
   "main": ".eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +23,8 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.8.7",
-    "typescript": "^5.0.4"
-  }
+    "typescript": "^5.0.4",
+    "eslint": "^8.38.0"
+  },
+  "peerDependencies": {}
 }
