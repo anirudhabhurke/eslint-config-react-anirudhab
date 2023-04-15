@@ -30,16 +30,14 @@ module.exports = {
 
 ### 2. [Optional] Create or update your project's tsconfig.json file with the following settings to enable path aliases
 
-```
+```json
 {
   "compilerOptions": {
-    ...
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     }
   },
-  ...
 }
 ```
 
